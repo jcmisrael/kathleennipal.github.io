@@ -2,16 +2,16 @@
 layout: default
 ---
 <div class="masonry">
-    <div>  {% for gallery in site.galleries %} {% if gallery.name == page.title %} {% for art in gallery.arts %}
+    <div>  {% for art in page.arts %}
         <div class="masonry-panel">
             <a href="#{{ art.order }}" data-caption-desc="{{ art.description }}">
                 <img src="{{ site.github.url }}/{{ art.image }}" alt="{{ art.title }}" class="zoom">
             </a>
-        </div>{% endfor %} {% endif %} {% endfor %}
+        </div>{% endfor %}
     </div>
 </div>
 
-{% for gallery in site.galleries %} {% if gallery.name == page.title %} {% for art in gallery.arts %}
+{% for art in page.arts %}
 <aside class="small-12 columns">
     <a href="#x" class="small-12 columns lightbox-overlay" id="{{ art.order }}"></a>
         <div class="lightbox-popup center-text">
@@ -38,4 +38,4 @@ layout: default
         </div>
     </div>
 </aside>
-{% endfor %} {% endif %} {% endfor %}
+{% endfor %}

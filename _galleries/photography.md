@@ -1,5 +1,5 @@
 ---
-  name: "photography"
+  title: "photography"
   arts:
     - image: "images/galleries/photography/1.jpg"
       order: "1"

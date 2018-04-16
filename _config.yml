@@ -9,7 +9,7 @@ description: The Personal Portfolio Website of Kathleen Nipal
 
  #Only use this if you are serving your site via Github Pages
 github:
-  url: "https://kathleennipal.github.io"
+  url: "https://focused-swartz-780887.netlify.com"
 
 header: images/logo.png
 
@@ -28,13 +28,6 @@ kramdown:
 
 remote_theme: "starving-artist"
 
-# Plugins
-gems:
-  - jekyll-feed
-
-feed:
-  path: atom.xml
-
 # Compress our Css
 #sass:
 #    style: :compressed
@@ -44,7 +37,16 @@ include: ['_pages']
 permalink: /blog/:year/:title
 
 collections:
-  - galleries
+  galleries:
+    output: true
+    permalink: ":name"
+
+defaults:
+  - scope:
+      path: ""
+      type: galleries
+    values:
+      layout: gallery
 
 #### SEO Stuff
 # Google Analytics

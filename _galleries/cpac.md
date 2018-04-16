@@ -1,12 +1,12 @@
 ---
-  name: "cpac"
+  title: "convention art"
   arts:
     - image: "images/galleries/cpac/1.jpg"
       order: "1"
       title:
       artist: "Kathleen Nipal"
       description:
-
+      
     - image: "images/galleries/cpac/2.jpg"
       order: "2"
       title:
