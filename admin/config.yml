@@ -12,7 +12,6 @@ collections:
     folder: "_galleries"
     fields:
       - {label: "Title", name: "title",  widget: "string"}
-      - {label: "Name", name: "name", widget: "string", default: "Should be same as title"}
       - label: "Arts"
         name: "arts"
         widget: "list"
