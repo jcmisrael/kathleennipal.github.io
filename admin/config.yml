@@ -1,0 +1,24 @@
+# Use git and branch master to update site
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "images/galleries" # Folder for uploading images
+
+collections:
+  - label: "Gallery"
+    name: "galleries"
+    create: true
+    folder: "_galleries"
+    fields:
+      - {label: "Title", name: "title",  widget: "string"}
+      - {label: "Name", name: "name", widget: "string", default: "Should be same as title"}
+      - label: "Arts"
+        name: "arts"
+        widget: "list"
+        fields:
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Order", name: "order", widget: "number"}
+          - {label: "Title", name: "title", widget: "string", required: false}
+          - {label: "Artist", name: "artist", widget: "string", required: false}
+          - {label: "Description", name: "description", widget: "text", required: false}
