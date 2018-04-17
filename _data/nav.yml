@@ -1,17 +1,18 @@
-- title: "graphicdesign"
-  href: "/graphicdesign/"
+entries:
+  - title: "graphicdesign"
+    href: "/graphicdesign/"
 
-- title: "illustrations"
-  href: "/illustrations/"
+  - title: "illustrations"
+    href: "/illustrations/"
 
-- title: "photography"
-  href: "/photography/"
+  - title: "photography"
+    href: "/photography/"
 
-- title: "convention art"
-  href: "/cpac/"
+  - title: "convention art"
+    href: "/cpac/"
 
-- title: "about"
-  href: "/about/"
+  - title: "about"
+    href: "/about/"
 
-- title: "contact"
-  href: "/contact/"
+  - title: "contact"
+    href: "/contact/"
