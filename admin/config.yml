@@ -25,16 +25,28 @@ collections:
           - {label: "Description", name: "description", widget: "text", required: false}
   - label: "Navigation Elements"
     name: "navigation"
-    create: false
-    delete: false
-    folder: "_data"
-    editor:
-      preview: false
-    fields:
-      - {label: "Title", name: "title", widget: "hidden"}
-      - label: "Entries"
-        name: "entries"
-        widget: "list"
+    files:
+      - label: "Navigation Links"
+        name: "navigationLinks"
+        file: "_data/nav.yml"
+        editor:
+          preview: false
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Link", name: "href", widget: "string"}
+          - label: "Entries"
+            name: "entries"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
+      - label: "Social Links"
+        name: "socialLinks"
+        file: "_data/socials.yml"
+        editor:
+          preview: false
+        fields:
+          - label: "Entries"
+            name: "entries"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Link", name: "href", widget: "string"}
